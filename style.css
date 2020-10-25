@@ -95,7 +95,7 @@ h3:after {
 .content-column {
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 80px;
+    padding-left: 100px;
     padding-right: 80px;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -103,6 +103,11 @@ h3:after {
     position: relative;
     width: 100%;
 }
+
+.content-column:first-child {
+    padding-left: 80px;
+    padding-right: 100px;
+  }
 
 .form-container {
     -webkit-box-shadow: 0px 0px 140px 0px rgba(50, 66, 91, 0.3);
@@ -120,6 +125,39 @@ h3:after {
     transition: all 0.5s linear;
     display: flex;
     justify-content: center;
+}
+
+.side-bg {
+    margin-top: 20px;
+    background-color: #20293a;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 420px;
+    min-width: 10px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -10px;
+}
+
+.side-bg::before {
+    content: "";
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #89deff 50%, #89deff 100%);
+}
+
+.side-bg::after {
+    content: "";
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    background: linear-gradient(to top right, transparent 0%, transparent 50%, #89deff 50%, #89deff 100%);
 }
 
 #register-form,
@@ -320,6 +358,10 @@ footer {
     .content-column {
         max-width: 100%;
         padding-bottom: 50px;
+    }
+
+    .side-bg {
+        display: none;
     }
 
     .form-container {

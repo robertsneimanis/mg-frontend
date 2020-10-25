@@ -122,6 +122,7 @@ p {
     justify-content: center;
 }
 
+.register-form,
 .login-form {
     margin-top: auto;
     margin-bottom: auto;
@@ -218,7 +219,9 @@ input:focus+label .not-active {
     opacity: 0.8;
 }
 
-
+.d-none {
+    display: none;
+}
 
 
 

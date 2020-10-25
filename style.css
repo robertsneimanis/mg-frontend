@@ -8,7 +8,7 @@ body {
     background-image: url("images/bg-image.jpg");
     background-repeat: no-repeat;
     height: 100vh;
-    min-height: 500px;
+    min-height: 600px;
     background-size: cover;
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
@@ -70,10 +70,6 @@ h3:after {
     left: 0;
     width: 40px;
     border-bottom: 2px solid #49abfe;
-}
-
-p {
-    /* max-width: 265px; */
 }
 
 .content-wrapper {
@@ -143,7 +139,7 @@ p {
 
 .form-group {
     position: relative;
-    padding-top: 22px;
+    padding-top: 16px;
 }
 
 input,
@@ -166,17 +162,18 @@ label sup {
 }
 
 input {
-    margin-bottom: 10px;
     border-left: none;
     border-right: none;
     border-top: none;
     border-bottom: 1px solid#cbd2df;
     width: 100%;
     margin-bottom: 24px;
-}
-
-input:last-child {
-    margin-bottom: 19px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    color: #3e495e;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
 }
 
 input:focus {
@@ -223,7 +220,16 @@ input:focus+label .not-active {
     display: none;
 }
 
-
+footer {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #a7b3cb;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
 
 
 

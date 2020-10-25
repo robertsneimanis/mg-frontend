@@ -183,7 +183,7 @@ input:focus {
     outline: none;
 }
 
-input:focus + label {
+input:focus+label {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 11px;

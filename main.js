@@ -1,7 +1,13 @@
 $(document).ready(function () {
-    $(".login").click(function () {
+    $(".show-register").click(function () {
         $(".form-container").toggleClass("show-register");
-        $(".login-form").toggleClass("d-none");
-        $(".register-form").toggleClass("d-none");
+        $(".login-form").fadeOut();
+        $(".register-form").delay(500).fadeIn();
+    });
+
+    $(".show-login").click(function () {
+        $(".form-container").toggleClass("show-register");
+        $(".register-form").fadeOut();
+        $(".login-form").delay(500).fadeIn();
     });
 });

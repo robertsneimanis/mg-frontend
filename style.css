@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("images/bg-image.jpg");
     background-repeat: no-repeat;
@@ -118,8 +122,8 @@ h3:after {
     justify-content: center;
 }
 
-.register-form,
-.login-form {
+#register-form,
+#login-form {
     margin-top: auto;
     margin-bottom: auto;
     width: 280px;
@@ -135,6 +139,11 @@ h3:after {
 
 .show-register {
     right: 440px;
+}
+
+.logo {
+    height: 28px;
+    width: auto;
 }
 
 .form-group {
@@ -171,9 +180,9 @@ input {
     padding-bottom: 13px;
     font-size: 16px;
     color: #3e495e;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 input:focus {
@@ -231,6 +240,117 @@ footer {
     text-transform: uppercase;
 }
 
+@media (max-width: 1199px) {
+    body {
+        min-height: 600px;
+    }
+
+    .content-wrapper {
+        width: 720px;
+        top: 50px;
+        left: 50%;
+        -ms-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+
+    .form-container {
+        width: 360px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .show-register {
+        right: 340px;
+    }
+
+    .content-column {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content-wrapper {
+        width: 550px;
+    }
+
+    .form-container {
+        width: 260px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .show-register {
+        right: 260px;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        height: auto;
+        min-height: auto;
+    }
+
+    .content-wrapper {
+        top: 0;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+
+    h3 {
+        font-weight: 400;
+        font-size: 28px;
+        position: relative;
+        margin-bottom: 56px;
+        margin-top: 0;
+    }
+
+    h3:after {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        height: 100%;
+        display: block;
+        height: auto;
+    }
+
+    .content-column {
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .form-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        display: block;
+        position: relative;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    #login-form,
+    #register-form {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-bottom: 50px;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        left: 0;
+        right: 0;
+        transform: translateX(0);
+    }
+}
 
 
 
